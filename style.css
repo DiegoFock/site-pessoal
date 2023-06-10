@@ -258,7 +258,9 @@ input, textarea, button {
 }
 
 .btn{
-  color:#75787d;
+  color: black;
+  background: gray;
+  font-weight: 600;
 }
 
 
