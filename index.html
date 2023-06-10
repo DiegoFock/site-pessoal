@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  <link rel="stylesheet" href="style.css">
+  <title>Site</title>
+</head>
+<body>
+  <main>
+    <!-- HEADER -->
+    <header>
+      <div class="Portifólio">
+        Portifólio
+      </div>
+      <div class="menu">
+        <nav class="nav-list">
+            <a href="#home">Home</a>
+            <a href="#biografia">Biografia</a>
+            <a href="#contact">Contato</a>
+        </nav>
+      </div>
+    </header>  
+    
+    <!-- HOME -->
+    <section id="home">
+      <div class="home-info">
+        <h2>Olá, sou Diego Fock</h2>
+        <span class="home-position">Estudante de Engenharia de Software</span>
+        <span class="home-resume">
+          Moro em Saquarema-RJ, Sou apaixonado por Tecnologia, Depois que entrei na àrea me apaixonei, trabalhei 3 anos também com redes de internet em um provedor da cidade, onde entrei de vez no mundo da tecnologia, Sou Graduando em Engenharia de Software, 
+          estou aprendendo algumas linguagens, como:
+          (HTML, Css, JS e Paython), também sei desenhar projetos em AutoCad 2D. Sou Técnico em Edificações e Técnico em Manutenção de Smartphones.
+        </span>
+
+        <button>
+          <a href="#contact">Contate-me</a>
+        </button>
+        <div class="home-curriculo">
+          <buton>
+            <a href="./img/Diego Fock.pdf">Currículo</a>
+          </buton>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="./img/fotoperfil.jpg" alt="Foto de perfil">
+      </div>
+    </section>
+
+    <!-- BIOGRAFIA -->
+
+    <section id="biografia">
+      <h2>Biografia</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="biografia-img">
+              <img src="./img/fotocasal.jpg" alt="Foto de Casal">
+            </div>
+            <div class="biografia-info">
+              <h2>Sobre</h2>
+              <p>Meu nome é Diego Fock, nasci em 20 de agosto de 1997, Sou casado,Estudante de engenharia de Software e CEO da Cti Celular.<br>Sou uma pessoa esforçada, sempre atrás de conhecimento.<br>Nos momentos de lazer gosto de estar em família e também entre amigos jogando um bom Fifa!<br></p>
+              
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="biografia-img">
+              <img src="./img/Cti.jpg" alt="Foto de onde trabalho">
+            </div>
+            <div class="biografia-info">
+              <h2>Onde trabalho no momento</h2>
+              <p>Trabalho na Cti Celular em Bacaxá.<br>Trabalho a 2 anos efetuando reparos em Smartphones, porém pretendo entrar na área de programação.<br> Loja especializada em Manutenção de Smartphones e venda de acessórios.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="biografia-img">
+              <img src="./img/curso.jpg" alt="Foto no curso">
+            </div>
+            <div class="biografia-info">
+              <h2>Formação</h2>
+              <p>Curso em manutenção de Smartphones<br>Curso Técnico em Edificações integrado ao ensino médio, finalizado na FAETEC.<br>Cursando Engenharia de Software na Universidade de Vassouras.<br>Sempre buscando aprimorar meus conhecimentos, buscando exelencia em tudo que faço!</p>
+            </div>
+            
+                </div>
+          </div>
+        </div>
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  
+  <!-- CONTACT -->
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <form action="#" onsubmit="return validarFormulario()">
+      <div class="input-box">   
+          <input type="text" placeholder= "Nome:">
+      </div>
+
+      <div class="input-box"> 
+          <input type="email"  placeholder="E-mail:">
+      </div>    
+          
+    
+      
+      <div class="input-box"> 
+          <input for="estado" placeholder="Cidade:">
+        </div>
+        <div class="input-box">       
+          <input type="text"  placeholder="E-mail Alternativo:">
+          <select id="cidade" name="cidade" class="select">
+              <option class="select" value="" selected disabled>Selecione...</option>
+              <option value="Araruama">Araruama</option>
+              <option value="Armação dos Búzios">Armação dos Búzios</option>
+              <option value="Arraial do Cabo">Arraial do Cabo</option>
+              <option value="Cabo Frio">Cabo Frio</option>
+              <option value="Casimiro de Abreu">Casimiro de Abreu</option>
+              <option value="Iguaba Grande">Iguaba Grande</option>
+              <option value="Macaé">Macaé</option>
+              <option value="Maricá">Maricá</option>
+              <option value="Rio Bonito">Rio Bonito</option>
+              <option value="Rio das Ostras">Rio das Ostras</option>
+              <option value="São Pedro da Aldeia">São Pedro da Aldeia</option>
+              <option value="Saquarema">Saquarema</option>
+              <option value="Silva Jardim">Silva Jardim</option>
+          </select>
+      </div>
+      <textarea id="" name="" rows="10" cols="30" placeholder="Mensagem"></textarea>
+          <input type="submit" value="Enviar Mensagem" class="btn">
+    </form>
+  </section>
+
+  <footer>
+    copyright © 2023 Diego Fock. Todos os direitos reservados.<br>
+    Rua Manoel Francisco Mauricio, Sem número<br>
+    Bacaxá, Saquarema-RJ
+  </footer>
+  </main>  
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
